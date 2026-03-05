@@ -1,91 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lancement Nouveau Produit</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 2rem;
-      background-color: #fef9f4;
-      color: #333;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      color: #e07b39;
-      margin-bottom: 0.5rem;
-    }
-
-    header h2 {
-      font-size: 1.2rem;
-      color: #555;
-      margin-bottom: 2rem;
-    }
-
-    button.cta {
-      background-color: #e07b39;
-      color: white;
-      border: none;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-
-    button.cta:hover {
-      background-color: #c9662e;
-    }
-
-    .benefices {
-      margin-top: 3rem;
-    }
-
-    .benefices h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .benefices ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .benefices li {
-      font-size: 1.1rem;
-      margin: 0.5rem 0;
-    }
-
-    .urgence {
-      color: red;
-      font-weight: bold;
-      margin-top: 1rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accès Anticipé - [Nom du Produit]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse-red {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse-red { animation: pulse-red 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Accès Anticipé : Nouveau Produit 🎉</h1>
-    <h2>Ne manquez pas votre chance, stock limité !</h2>
-  </header>
+<body class="bg-slate-900 text-white font-sans antialiased">
 
-  <main>
-    <button class="cta">Je réserve mon accès</button>
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter uppercase tracking-widest text-indigo-400">[Logo]</div>
+        <div class="hidden md:block text-slate-400 text-sm italic">Lancement officiel Q3 2026</div>
+    </nav>
 
-    <section class="benefices">
-      <h3>Pourquoi profiter de cette offre ?</h3>
-      <ul>
-        <li>Accès exclusif avant tout le monde 🔑</li>
-        <li>Quantité limitée, soyez rapide ⏳</li>
-        <li>Produit innovant et unique ✨</li>
-      </ul>
-    </section>
+    <main class="max-w-4xl mx-auto px-6 py-16 text-center">
+        
+        <div class="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/50 rounded-full px-4 py-1 mb-8">
+            <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse-red"></span>
+            <span class="text-red-400 text-xs font-bold uppercase tracking-widest">Seulement 12 places restantes</span>
+        </div>
 
-    <p class="urgence">⚠️ Stock limité – premier arrivé, premier servi !</p>
-  </main>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-white to-slate-500 bg-clip-text text-transparent">
+            L'avenir de [Secteur] commence ici.
+        </h1>
+        
+        <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+            Obtenez un accès exclusif à <strong>[Nom du Produit]</strong> avant tout le monde. Profitez des fonctionnalités premium et d'un tarif fondateur à vie.
+        </p>
+
+        <div class="bg-slate-800 border border-slate-700 p-8 rounded-3xl shadow-2xl max-w-md mx-auto">
+            <h3 class="text-xl font-bold mb-4">Accès Anticipé "Founding Member"</h3>
+            <div class="text-4xl font-bold mb-2">99€ <span class="text-sm text-slate-500 line-through">299€</span></div>
+            <p class="text-indigo-400 text-sm mb-6">Paiement unique • Accès à vie</p>
+            
+            <a href="#" class="block w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-indigo-500/20">
+                Réserver ma place maintenant
+            </a>
+            
+            <p class="mt-4 text-[10px] text-slate-500 uppercase tracking-widest"> Activation immédiate après paiement</p>
+        </div>
+
+        <div class="mt-24 grid md:grid-cols-3 gap-8 text-left">
+            <div class="p-6 border-l border-indigo-500 bg-indigo-500/5">
+                <h4 class="font-bold mb-2 text-indigo-300">Priorité Totale</h4>
+                <p class="text-sm text-slate-400">Vos demandes de fonctionnalités passent en haut de notre pile de développement.</p>
+            </div>
+            <div class="p-6 border-l border-indigo-500 bg-indigo-500/5">
+                <h4 class="font-bold mb-2 text-indigo-300">Badge Fondateur</h4>
+                <p class="text-sm text-slate-400">Un statut spécial visible sur votre profil utilisateur pour toujours.</p>
+            </div>
+            <div class="p-6 border-l border-indigo-500 bg-indigo-500/5">
+                <h4 class="font-bold mb-2 text-indigo-300">Prix Bloqué</h4>
+                <p class="text-sm text-slate-400">Ne subissez jamais les augmentations de prix futures de la version publique.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="mt-20 py-10 border-t border-slate-800 text-center text-slate-600 text-xs">
+        &copy; 2026 [Nom de ta boîte]. Fait avec passion pour les early-adopters.
+    </footer>
+
 </body>
 </html>
